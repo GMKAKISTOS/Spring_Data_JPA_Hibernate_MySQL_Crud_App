@@ -1,4 +1,4 @@
-# Spring Data JPA Hibernate MySQL CRUD Application
+# Spring data jpa hibernate MySQL crud application
 
 This repository contains a command-line interface (CLI) application built with Spring Boot, Spring Data JPA, and Hibernate. It demonstrates full CRUD (Create, Read, Update, Delete) operations on a MySQL database for managing companies, departments, tasks, and employee information.
 
