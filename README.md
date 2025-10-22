@@ -52,7 +52,7 @@ The `Application.sql` file contains the complete schema definition, including:
     -   Ensure your MySQL server is running.
     -   Execute the `Application.sql` script located in the root directory. This will create the `application` database, tables, triggers, and stored procedures. You can use a MySQL client like MySQL Workbench or the command line:
         ```bash
-        mysql -u your_username -p < Application.sql
+        mysql -u your_mysql_username -p < Application.sql
         ```
 
 3.  **Configure Database Connection:**
@@ -60,8 +60,8 @@ The `Application.sql` file contains the complete schema definition, including:
     -   Update the following properties to match your MySQL configuration:
         ```properties
         spring.datasource.url=jdbc:mysql://localhost:3306/application
-        spring.datasource.username=root
-        spring.datasource.password=your_password
+        spring.datasource.username=your_mysql_username
+        spring.datasource.password=your_mysql_password
         ```
 
 4.  **Build and Run the Application:**
