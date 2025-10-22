@@ -1,25 +1,25 @@
 # Spring data jpa hibernate MySQL crud application
 
-This repository contains a command-line interface (CLI) application built with Spring Boot, Spring Data JPA, and Hibernate. It demonstrates full CRUD (Create, Read, Update, Delete) operations on a MySQL database for managing companies, departments, tasks, and employee information.
+This repository contains a command-line interface (CLI) application built with Spring Boot, Spring Data JPA and Hibernate. It demonstrates full CRUD (Create, Read, Update, Delete) operations on a MySQL database for managing companies, departments, tasks and employee information.
 
 ## Features
 
-- **Comprehensive CRUD Operations:** Perform Create, Read, Update, and Delete operations for all entities.
+- **Comprehensive CRUD Operations:** Perform Create, Read, Update and Delete operations for all entities.
 - **Relational Data Model:** Manages relationships between entities (Company, Department, Task, Employee).
 - **Interactive CLI:** A user-friendly command-line menu to interact with the application.
 - **JPA & Hibernate:** Utilizes Java Persistence API (JPA) with Hibernate as the persistence provider for object-relational mapping.
-- **Advanced SQL Schema:** Includes a detailed SQL script with table definitions, constraints, triggers, stored procedures, and scheduled events for database setup.
+- **Advanced SQL Schema:** Includes a detailed SQL script with table definitions, constraints, triggers, stored procedures and scheduled events for database setup.
 - **Data Validation:** Implements input validation both in the application logic and at the database level with constraints and triggers.
 
 ## Database Schema
 
-The application uses a relational schema with four main tables: `company`, `department`, `task`, and `information`.
+The application uses a relational schema with four main tables: `company`, `department`, `task` and `information`.
 
 -   A `Company` has a one-to-many relationship with `Department`.
 -   A `Department` has a one-to-many relationship with `Task` and `Information` (employees).
 -   A `Task` can be assigned to multiple employees (one-to-many relationship with `Information`).
 
-The `Application.sql` file contains the complete schema definition, including:
+The `Application.sql` file contains the complete schema definition including:
 -   Table creation with constraints.
 -   Database triggers for data formatting and integrity (e.g., capitalizing company names).
 -   Stored procedures for maintenance tasks (e.g., resetting auto-increment values).
@@ -50,7 +50,7 @@ The `Application.sql` file contains the complete schema definition, including:
 
 2.  **Database Setup:**
     -   Ensure your MySQL server is running.
-    -   Execute the `Application.sql` script located in the root directory. This will create the `application` database, tables, triggers, and stored procedures. You can use a MySQL client like MySQL Workbench or the command line:
+    -   Execute the `Application.sql` script located in the root directory. This will create the `application` database, tables, triggers and stored procedures. You can use a MySQL client like MySQL Workbench or the command line:
         ```bash
         mysql -u your_mysql_username -p < Application.sql
         ```
