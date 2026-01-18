@@ -44,7 +44,7 @@ The `Application.sql` file contains the complete schema definition including:
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/panoschron97/Spring_Data_JPA_Hibernate_MySQL_Crud_App.git
+    git clone https://github.com/GMKAKISTOS/Spring_Data_JPA_Hibernate_MySQL_Crud_App.git
     cd Spring_Data_JPA_Hibernate_MySQL_Crud_App
     ```
 
